@@ -13,3 +13,38 @@ html {
 .toolbar ul li:before {
   display: none;
 }
+
+.tabs {
+  border-bottom: 3px solid #0071bc;
+  width: 100%;
+}
+
+.usa-tab {
+  display: inline-block;
+  margin-bottom: -1px;
+  margin-right: 4px;
+}
+
+.usa-tab:before {
+  content: '';
+}
+
+.usa-tab a {
+  background-color: #5b616b;
+  color: #fff;
+  font-weight: 700;
+  margin-bottom: .4rem;
+  padding-bottom: 1rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 1rem;
+  text-decoration: none;
+}
+
+.usa-tab a:hover {
+  background-color: #4773aa;
+}
+
+.usa-tab a.active {
+  background-color: #0071bc;
+}

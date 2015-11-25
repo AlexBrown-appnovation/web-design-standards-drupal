@@ -29,3 +29,48 @@
 .toolbar ul li:before {
   display: none;
 }
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////
+//
+//  #Tabs
+//
+////////////////////////////////////////////////////////////////////////////////
+
+.tabs {
+  border-bottom: 3px solid $color-primary;
+  width: 100%;
+}
+
+.usa-tab {
+  display: inline-block;
+  margin-bottom: -1px;
+  margin-right: 4px;
+}
+
+.usa-tab:before {
+  content: '';
+}
+
+.usa-tab a {
+  background-color: $color-gray;
+  color: #fff;
+  font-weight: 700;
+  margin-bottom: .4rem;
+  padding-bottom: 1rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 1rem;
+  text-decoration: none;
+}
+
+.usa-tab a:hover {
+  background-color: $color-cool-blue-light;
+}
+
+.usa-tab a.active {
+  background-color: $color-primary;
+}
