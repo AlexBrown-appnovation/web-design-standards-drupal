@@ -27,6 +27,7 @@
 //    #Tabs
 //    #Forms
 //    #Menus
+//    #Alerts
 //
 ////////////////////////////////////////////////////////////////////////////////
 
@@ -144,4 +145,20 @@ h6 {
     // could be added by replacing the 'active' class with 'usa-current'
     @include usa-current();
   }
+}
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////
+//
+//  #Status Messages
+//
+////////////////////////////////////////////////////////////////////////////////
+
+.usa-alert-status {
+  background-color: #E8F5FA;
+  background-image: url("../assets/img/alerts/info.png");
+  background-image: url("../assets/img/alerts/info.svg");
 }
