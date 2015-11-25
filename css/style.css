@@ -5,3 +5,11 @@ html {
 *, *::after, *::before {
   box-sizing: inherit;
 }
+
+.toolbar ul {
+  display: block;
+}
+
+.toolbar ul li:before {
+  display: none;
+}
