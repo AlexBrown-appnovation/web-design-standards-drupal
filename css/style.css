@@ -89,3 +89,9 @@ h6.usa-heading-alt {
   font-weight: 700;
   padding-left: 1.4rem;
 }
+
+.usa-alert-status {
+  background-color: #E8F5FA;
+  background-image: url("../assets/img/alerts/info.png");
+  background-image: url("../assets/img/alerts/info.svg");
+}
