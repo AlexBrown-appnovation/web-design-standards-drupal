@@ -73,3 +73,19 @@ textarea,
 select {
   max-width: initial;
 }
+
+h6.usa-heading-alt {
+  margin-top: 4rem;
+}
+
+.usa-heading-alt {
+  border-bottom: 1px solid #5b616b;
+  padding-bottom: .8rem;
+}
+
+.usa-sidenav-list .active {
+  border-left: 4px solid #0071bc;
+  color: #0071bc;
+  font-weight: 700;
+  padding-left: 1.4rem;
+}
