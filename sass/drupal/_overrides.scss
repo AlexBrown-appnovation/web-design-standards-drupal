@@ -26,6 +26,7 @@
 //  2. Drupal Styleguide Components
 //    #Tabs
 //    #Forms
+//    #Menus
 //
 ////////////////////////////////////////////////////////////////////////////////
 
@@ -115,4 +116,32 @@ input[type="week"],
 textarea,
 select {
   max-width: initial;
+}
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////
+//
+//  #Menus
+//
+////////////////////////////////////////////////////////////////////////////////
+
+h6 {
+  &.usa-heading-alt {
+    margin-top: 4rem;
+  }
+}
+
+.usa-heading-alt {
+  border-bottom: 1px solid $color-gray;
+  padding-bottom: .8rem;
+}
+
+.usa-sidenav-list {
+  .active {
+    // could be added by replacing the 'active' class with 'usa-current'
+    @include usa-current();
+  }
 }
