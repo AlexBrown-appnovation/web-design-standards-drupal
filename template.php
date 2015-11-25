@@ -76,3 +76,48 @@ function us_web_design_standards_status_messages($variables) {
   }
   return $output;
 }
+
+/**
+*
+* Implements hook_preprocess_search_block_form().
+*
+*/
+
+function us_web_design_standards_preprocess_search_block_form(&$vars) {
+  $vars['search_form'] = str_replace('type="text"', 'type="search"', $vars['search_form']);
+}
+
+/**
+*
+* Implements hook_form_search_block_alter().
+*
+*/
+
+function us_web_design_standards_form_search_block_form_alter(&$form, &$form_state, $form_id) {
+  $form['#attributes']['class'][] = 'usa-search';
+  // we are using the default size of search-field-bg but we will probably
+  // want to let the user choose between big/medium/small in the future
+  $form['search_block_form']['#prefix'] = '<div role="search">';
+  $form['search_block_form']['#suffix'] = '</div>';
+
+  // create and use a button instead of the default input
+  $form['button'] = array(
+    '#type' => 'item',
+    '#markup' => '<button type="submit" id="edit-submit" name="op" class="form-submit" value="Search"><span class="usa-search-submit-text">Search</span></button>',
+    '#weight' => 1000,
+  );
+  $form['actions']['#attributes']['class'][] = 'element-invisible';
+}
+
+/**
+*
+* Implements hook_form_alter().
+*
+*/
+
+function us_web_design_standards_form_alter(&$form, &$form_state, $form_id) {
+  if ($form_id == 'search_form') {
+    $form['#attributes']['class'][] = 'usa-search usa-search-big';
+    $form['basic']['#attributes']['role'][] = 'search';
+  }
+}
