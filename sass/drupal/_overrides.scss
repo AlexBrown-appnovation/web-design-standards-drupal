@@ -145,10 +145,42 @@ h6 {
   padding-bottom: .8rem;
 }
 
+// first level navigation
 .usa-sidenav-list {
   .active {
     // could be added by replacing the 'active' class with 'usa-current'
     @include usa-current();
+  }
+
+  // second level sidenav
+  .usa-sidenav-list {
+    margin: 0;
+    width: 100%;
+
+    li {
+      border: none;
+      font-size: 1.5rem;
+
+      &:first-child {
+        border-top: none;
+      }
+    }
+
+    a {
+      padding-left: 2.8rem;
+      line-height: 1.3;
+    }
+
+    .active {
+      border-left: none;
+    }
+
+    // third level sidenav
+    .usa-sidenav-list {
+      a {
+        padding-left: 3.8rem;
+      }
+    }
   }
 }
 

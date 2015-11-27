@@ -95,6 +95,33 @@ h6.usa-heading-alt {
   padding-left: 1.4rem;
 }
 
+.usa-sidenav-list .usa-sidenav-list {
+  margin: 0;
+  width: 100%;
+}
+
+.usa-sidenav-list .usa-sidenav-list li {
+  border: none;
+  font-size: 1.5rem;
+}
+
+.usa-sidenav-list .usa-sidenav-list li:first-child {
+  border-top: none;
+}
+
+.usa-sidenav-list .usa-sidenav-list a {
+  padding-left: 2.8rem;
+  line-height: 1.3;
+}
+
+.usa-sidenav-list .usa-sidenav-list .active {
+  border-left: none;
+}
+
+.usa-sidenav-list .usa-sidenav-list .usa-sidenav-list a {
+  padding-left: 3.8rem;
+}
+
 .usa-alert-status {
   background-color: #E8F5FA;
   background-image: url("../assets/img/alerts/info.png");
