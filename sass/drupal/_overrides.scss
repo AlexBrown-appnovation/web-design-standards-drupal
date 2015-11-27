@@ -28,6 +28,7 @@
 //    #Forms
 //    #Menus
 //    #Alerts
+//    #Form Controls
 //
 ////////////////////////////////////////////////////////////////////////////////
 
@@ -198,4 +199,27 @@ h6 {
   background-color: #E8F5FA;
   background-image: url("../assets/img/alerts/info.png");
   background-image: url("../assets/img/alerts/info.svg");
+}
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////
+//
+//  #Form Controls
+//
+////////////////////////////////////////////////////////////////////////////////
+
+.usa-input-error {
+  label {
+    display: block;
+    font-size: 1.7rem;
+    font-weight: 700;
+    margin-top: 0;
+  }
+
+  .form-required {
+    color: $color-secondary-dark;
+  }
 }
