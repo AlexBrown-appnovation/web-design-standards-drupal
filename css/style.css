@@ -19,6 +19,18 @@ html {
   display: none;
 }
 
+#block-system-powered-by {
+  background-color: #205493;
+  color: #ffffff;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+#block-system-powered-by a {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
 .tabs {
   border-bottom: 3px solid #0071bc;
   width: 100%;
