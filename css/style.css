@@ -127,3 +127,14 @@ h6.usa-heading-alt {
   background-image: url("../assets/img/alerts/info.png");
   background-image: url("../assets/img/alerts/info.svg");
 }
+
+.usa-input-error label {
+  display: block;
+  font-size: 1.7rem;
+  font-weight: 700;
+  margin-top: 0;
+}
+
+.usa-input-error .form-required {
+  color: #cd2026;
+}
