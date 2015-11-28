@@ -150,3 +150,35 @@ h6.usa-heading-alt {
 .usa-input-error .form-required {
   color: #cd2026;
 }
+
+.usa-banner {
+  background-color: #112e51;
+  color: #ffffff;
+  padding-bottom: 3.7rem;
+  padding-top: 1rem;
+}
+
+@media screen and (min-width: 600px) {
+  .usa-banner h1 {
+    font-size: 5.6rem;
+  }
+}
+
+.usa-banner-site-name {
+  color: #ffffff;
+}
+
+.usa-banner-site-name:hover {
+  text-decoration: none;
+}
+
+.usa-banner-site-name:visited {
+  color: #ffffff;
+}
+
+.usa-font-lead {
+  font-size: 2rem;
+  font-weight: 300;
+  font-family: "Merriweather", "Georgia", "Times New Roman", serif;
+  line-height: 1.7;
+}

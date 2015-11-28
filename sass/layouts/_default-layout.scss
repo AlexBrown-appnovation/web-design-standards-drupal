@@ -1,0 +1,37 @@
+////////////////////////////////////////////////////////////////////////////////
+//
+//  #Default Layout - can be edited to your hearts content
+//
+////////////////////////////////////////////////////////////////////////////////
+
+.usa-banner {
+  background-color: $color-primary-darkest;
+  color: $color-white;
+  padding-bottom: 3.7rem;
+  padding-top: 1rem;
+
+  h1 {
+    @media screen and (min-width: 600px) {
+      font-size: 5.6rem;
+    }
+  }
+}
+
+.usa-banner-site-name {
+  color: $color-white;
+
+  &:hover {
+    text-decoration: none;
+  }
+
+  &:visited {
+    color: $color-white;
+  }
+}
+
+.usa-font-lead {
+  font-size: 2rem;
+  font-weight: 300;
+  font-family: $font-serif;
+  line-height: 1.7;
+}
